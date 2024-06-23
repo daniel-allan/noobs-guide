@@ -9,3 +9,10 @@
 ```gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']" ```
 enter the command and reboot the system 
 
+## set up github login
+[useful links](https://github.com/cli/cli/issues/4351)
+add user name ```git config user.name```
+add email address ```git config user.email```
+as password based auth is removed i used github cli 
+using ```gh auth login (even after logging in it prompt me for password)
+gh auth setup-git (running this command fixed the issue)```
