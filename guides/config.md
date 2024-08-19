@@ -11,16 +11,16 @@
     -f to specify the file where the key is saved 
     -C to have a useful comment
     
-    ### copy the shh key to the server
+### copy the shh key to the server
     - copy the ssh key to the server using ssh-copy-id command
     eg ```ssh-copy-id -i [path to public key] user_of_server@ip_of_server```
         -i is to specify the identify file aka pub key
-    ### disable root login, password based auth
+### disable root login, password based auth
     - edit the /etc/ssh/sshd_config file
     ``` change the premitrootlogin to no
         change the passwordAuthentication to no
         chnage the publicAuthentication to yes ```
-    ### Create a shh config file
+### Create a shh config file
     - create a config file in .ssh/config
     eg: ```Host debian-machine
            HostName [ip]
